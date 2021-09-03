@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sandy Hill Subs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <!--<div class="col" style="background-color:white;"></div>-->
+        
+        <div class="col" style="background-color:white;">
+            <div class="img-container">
+              <a href="#"><img class="logo" src="../images/logo.jpeg"></a>
+            </div>
+        
+        <!--<div class="col" style="background-color:white;">-->
+            <nav>    
+              <!-- create a hamburger icon button to the mobile size -->
+               <button class="hamburger" type="button">
+                  <div class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </div>
+               </button> 
+              <!-- add a row div to fix the position of the navigation links -->
+                 <div class="row" class="topnav-centered"> 
+                  <!-- add in the navigation the following links and link them to the class toggle so that the links will appear when ezpanding the hamburger menu -->
+                    <ul class="toggle">
+                      <li><a href="../index.html">Home</a></li>
+                      <li><a href="../pages/menu.html">Menu</a></li>
+                      <li><a href="#">Contacts</a></li>
+                    </ul>
+                 </div> 
+              <!-- end navigation -->
+            </nav>  
+          </div>
+  </header>
+
+  <section>
+    <div class="cntImage">
+      <div class="cntContents">
+        <div class="row">
+          <div class="col-12 col-sm-5">
+              <h1>Contacts Us @...</h1>
+              <p>Email: SandyHillsSubs@gmail.com</p>
+              <p>Phone: (613)-233-1001</p>
+              <p>65 Templeton Street - Postal code K1N7P7</p>
+              <P>We open daily from 6:00am to 8:00pm</P>
+          </div>
+          <div class="col-12 col-sm-5">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.4190015850754!2d-75.68011808444402!3d45.421054379100454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0575940787b9%3A0x8d32dec5483f0457!2sSandy%20Hill%20Subs!5e0!3m2!1sen!2sca!4v1629992254095!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+<!-----------------------------------------------------End Contact Us ------------------------------------------->
+     </div>
+      </div>
+  </section>
+
+
+  <footer>
+    <!-- Create a container to wrap the social media icons and the copyrights statement together -->
+      <div class="container">
+<!-- Add facebook icon -->
+        <a  class="face" href="https://www.facebook.com/SandyHillsSubs/?ref=page_internal" target="_blank"><img class="img-fluid face" class="face" src="../images/face.png" alt="facebook"></a> 
+<!-- Add twitter icon -->
+        <a class="Instagram" href="https://www.instagram.com/sandyhillsubs/" target="_blank"><img class="img-fluid twitter" src="../images/inst.png" alt="instagram"></a>
+<!-- Add the copyright statement in the next line -->
+      <div class="copyrights">
+        <p>Copyrights &copy; 2021 Sandy Hill Subs. All Rights Reserved</p>
+      </div>
+<!-- end container -->
+    </div>
+  </footer>
+  </body>
+  <!-- start script area -->
+  <!-- script that makes the humburger menu open and close -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script>
+      var $hamburger = $(".hamburger");
+      var $toggle = $("header nav ul");
+  // When clicking on the hamburger icon, activate the icon (make it open) and show the links in the class toggle 
+      $hamburger.on("click", function(e) {
+      $hamburger.toggleClass("is-active");
+      $toggle.toggleClass("toggle");
+      });
+    </script>
+  <!-- end hamburger script -->
+</html>
