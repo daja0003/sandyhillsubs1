@@ -1,0 +1,303 @@
+* {
+	font-family: Tahoma, helvetica, arial, sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    color: white;
+}
+
+/*Set Logo to the Left*/
+.logo {
+    position: absolute;
+    float: justify;
+    margin-left: 30%;
+    width: 40%;
+    /*align-content: center;*/
+}
+
+header nav {
+    position: fixed;
+/*set the navigator on the top and book the whole line for it*/
+    top: 0;
+    /*left: 30%;*/
+    right: 8%;
+    z-index: 100;
+    text-align: right;
+}
+
+.hamburger-box {
+    width: 30px;
+    height: 30px;
+    border: none;
+   
+}
+/*float the hamburger icon to the right of the page*/
+header button {
+    float: right;
+}
+/*put a background behind the hamburger icon*/
+/*header .hamburger{
+    background-color: rgba(255,255,255,0.85);
+}*/
+/*set the color of the hamburger icon to gray before, after clicking on it and when it is activated*/
+header .hamburger-inner:before,
+header .hamburger-inner:after,
+header .hamburger-inner:active,
+header .hamburger-inner {
+    background-color: #353334;
+}
+/*set the alignment of the links of the hamburger icon navigation*/
+header nav .row {
+    display: block;
+    text-align: right;
+    margin-right:0;
+    margin-top: -3%;
+
+}
+/*give the links of the hamburger icon a hidden value when loading the page*/
+.toggle {
+    display: none;
+}
+/*put a background behind the list links*/
+header nav ul {
+    background-color: rgba(255,255,255,0.85);
+    font-size: 0.8em;
+    text-align: right;
+    margin-right: -2%;
+}
+/*fix the spaces between the links in the toggle menu and remove any given styles from the menu*/
+header nav ul li {
+    margin: 0.2em;
+    list-style: none;
+}
+/*remove the links text decorations, and set the transition time required when clicking on the links*/
+header nav ul li a {
+    text-decoration: none;
+    transition: 0.2s;
+}
+/*give the links a color when their status is link and visited*/
+header nav ul li a:link,
+header nav ul li a:visited {
+    color: #353334;
+    font-weight: bold;
+
+}
+/*when hovering on a link or activating one, show a line under the selected navigation link*/
+header nav ul li a:hover,
+header nav ul li a:active {
+    text-decoration: none;
+    color: #e64c42
+}
+
+/*-----------------------------main-------------------------------------------*/
+/*--------Home-------*/
+ .heroImage {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url("../images/home_bk.jpg");
+    height: 110%;
+    Width: 110%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*position: relative;*/
+    margin-top: 14%;
+}
+.heroContents {
+    padding-top: 8px;
+    padding-bottom: 2px;
+    padding-right: 10%;
+    padding-left: 47%;
+    text-align: left;
+    color: white;
+    font-size: 0.90em;
+}
+/*--------------Menu-----------*/
+.bkimg img {
+    height: 100%;
+    Width: 100%;
+    align-content: center;
+    margin-top: 13%;
+    margin-bottom: 3%;
+}
+section h1 {
+    font-size: 1.5em;
+}
+/*-------------Contacts--------*/
+/*fix the size of the logo icon*/
+section .cntImage {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url("../images/cntbg.jpg");
+    height: 110%;
+    Width: 110%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*position: relative;*/
+    margin-top: 13%;
+}
+.cntContents h1{
+    font-size: 1em;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+.cntContents p{
+    font-size: 0.7em;
+    padding-left: 2%;
+}
+/*specify the map size*/
+iframe {
+    width:90%;
+    height:80%;
+    padding-top: 1%;
+}
+/*-------------------------------------------------Footer-----------------------------------------------------*/
+/*set a footer space on the bottom of the page, fix it so that it will scroll with the page, cofigure its size and background color*/
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 7%;
+    z-index: 100;
+    background-color: white;
+}
+/*remove the social media navigation styles*/
+footer nav ul {
+    list-style-type: none;
+}
+/*center the container that contains the social media icons and the copyrights*/
+footer .container {
+    text-align: center;
+    /*margin-top: 0.25%;*/
+}
+/*resize the facebook icon*/
+.face img {
+    width: 4%;
+    margin-right: 1%;
+}
+/*resize the twitter icon*/
+.Instagram img {
+    width: 4%;  
+}
+/*center the copyright sentence, give it a size and a color*/
+.copyrights {
+    text-align: center;
+    font-size:  0.75em;
+    color: #1b0505;
+}
+/*------------------------------------Meduim Size----------------------------------------------------------------*/
+@media (min-width: 928px) {
+/*Navigation settings meduim-large sizes*/
+    /*re-set the logo's size*/
+    .logo {
+        display: block;
+        text-align: center;
+        max-width: 30%;
+      
+    }
+
+/*remove hamburger icon*/
+    .hamburger {
+        display: none;
+    }
+/*display the navigation as a block to fill the whole row*/
+    .toggle {
+        display: block;
+        
+    }
+header {
+    text-align:center
+    position: fixed;
+}
+/*make the white background behind the navigation a full line and make the background a solid white*/
+header nav {
+   width: 100%;
+  position: absolute;
+right: 0;
+    text-align: center;
+    background-color: transparent;
+   /*margin-left:25%;*/
+    margin-top: 12%;
+    float:  center;
+   z-index: 100%;
+    padding: 0px 0px;
+  text-decoration: none;
+    }
+
+/*float the navigation to 10% before the right-end*/
+
+    header nav ul {
+        position: absolute;
+        z-index: 100%;
+        float: none;
+      /* margin-left: 28em;*/
+        top: 50%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+         background-color: transparent;
+    }
+/*navigate the links in the navigation to the left and give them a font size*/
+    header nav ul li {
+        float: left;
+        font-size: 2em;
+        font-weight: bold;
+        color: rgb(53, 51, 52);
+        margin: 1.5em;
+    }
+
+
+/*re-set the title size*/
+    header .title {
+        width: 70%;
+    }
+.heroImage {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url("../images/home_bk.jpg");
+    height: 500px;
+    Width: 100%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*position: relative;*/
+    margin-top: 13%;
+}
+.heroContents {
+    padding-top: 150px;
+    padding-left: 50%;
+    padding-right: 4%;
+    text-align: left;
+    color: white;
+    font-size: 1em;
+}
+section h1 {
+    font-size: 2em;
+}
+.face img {
+    width: 2%;
+    margin-right: 1%;
+}
+/*resize the twitter icon*/
+.Instagram img {
+    width: 2%;  
+}
+.cntImage {
+    height:460px ;
+    width: 100%;
+    margin-top: 15%;
+}
+.cntContents{
+    padding: 2%;
+}
+.cntContents h1{
+    font-size: 2.5em;
+}
+.cntContents h2{
+    font-size: 1em;
+}
+.cntContents p{
+    font-size: 1.6em;
+}
+iframe {
+    width:100%;
+    height:100%;
+    /*margin-left: 50%;*/
+
+}
