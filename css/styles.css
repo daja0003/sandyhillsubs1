@@ -96,8 +96,8 @@ header nav ul li a:active {
 /*--------Home-------*/
  .heroImage {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url("../images/home_bk.jpg");
-    height: 110%;
-    Width: 110%;
+    height: 180%;
+    Width: 180%;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,9 +107,10 @@ header nav ul li a:active {
 .heroContents {
     padding-top: 8px;
     padding-bottom: 2px;
-    padding-right: 10%;
-    padding-left: 47%;
+    padding-right: 45%;
+    padding-left: 20%;
     text-align: left;
+    align-content: center;
     color: white;
     font-size: 0.90em;
 }
@@ -128,14 +129,17 @@ section h1 {
 /*fix the size of the logo icon*/
 section .cntImage {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url("../images/cntbg.jpg");
-    height: 110%;
-    Width: 110%;
+    height: 180%;
+    Width: 180%;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     /*position: relative;*/
     margin-top: 30%;
 }
+/*.posit {
+    margin-top: 10%;
+}*/
 .cntContents h1{
     font-size: 1.3em;
     padding-top: 2%;
