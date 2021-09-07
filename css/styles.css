@@ -12,17 +12,18 @@ html, body {
 .logo {
     position: absolute;
     float: justify;
-    margin-left: 30%;
-    width: 40%;
+    margin-left: 15%;
+    max-width: 60%;
     /*align-content: center;*/
 }
 
+
 header nav {
-    position: fixed;
+    position: absolute;
 /*set the navigator on the top and book the whole line for it*/
     top: 0;
     /*left: 30%;*/
-    right: 8%;
+    right: 2%;
     z-index: 100;
     text-align: right;
 }
@@ -63,8 +64,8 @@ header nav .row {
 /*put a background behind the list links*/
 header nav ul {
     background-color: rgba(255,255,255,0.85);
-    font-size: 0.8em;
-    text-align: right;
+    font-size: 1.2em;
+    text-align: Left;
     margin-right: -2%;
 }
 /*fix the spaces between the links in the toggle menu and remove any given styles from the menu*/
@@ -101,7 +102,7 @@ header nav ul li a:active {
     background-position: center;
     background-repeat: no-repeat;
     /*position: relative;*/
-    margin-top: 14%;
+    margin-top: 30%;
 }
 .heroContents {
     padding-top: 8px;
@@ -117,8 +118,8 @@ header nav ul li a:active {
     height: 100%;
     Width: 100%;
     align-content: center;
-    margin-top: 13%;
-    margin-bottom: 3%;
+    margin-top: 30%;
+    margin-bottom: 10%;
 }
 section h1 {
     font-size: 1.5em;
@@ -133,15 +134,15 @@ section .cntImage {
     background-position: center;
     background-repeat: no-repeat;
     /*position: relative;*/
-    margin-top: 13%;
+    margin-top: 30%;
 }
 .cntContents h1{
-    font-size: 1em;
+    font-size: 1.3em;
     padding-top: 2%;
     padding-left: 2%;
 }
 .cntContents p{
-    font-size: 0.7em;
+    font-size: 1.1em;
     padding-left: 2%;
 }
 /*specify the map size*/
@@ -191,7 +192,8 @@ footer .container {
     .logo {
         display: block;
         text-align: center;
-        max-width: 30%;
+        margin-left: 30%;
+        max-width: 25%;
       
     }
 
@@ -234,6 +236,7 @@ right: 0;
         left: 45%;
         transform: translate(-50%, -50%);
          background-color: transparent;
+         font-size: 0.8em;
     }
 /*navigate the links in the navigation to the left and give them a font size*/
     header nav ul li {
@@ -267,21 +270,19 @@ right: 0;
     color: white;
     font-size: 1em;
 }
+.bkimg img {
+    margin-top: 13%;
+    margin-bottom: 2%;
+}
+
 section h1 {
     font-size: 2em;
 }
-.face img {
-    width: 2%;
-    margin-right: 1%;
-}
-/*resize the twitter icon*/
-.Instagram img {
-    width: 2%;  
-}
-.cntImage {
+
+section .cntImage {
     height:460px ;
     width: 100%;
-    margin-top: 15%;
+    margin-top: 13%;
 }
 .cntContents{
     padding: 2%;
@@ -296,8 +297,16 @@ section h1 {
     font-size: 1.6em;
 }
 iframe {
-    width:100%;
-    height:100%;
+    width:110%;
+    height:110%;
     /*margin-left: 50%;*/
 
+}
+.face img {
+    width: 2%;
+    margin-right: 1%;
+}
+/*resize the twitter icon*/
+.Instagram img {
+    width: 2%;  
 }
