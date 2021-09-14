@@ -97,21 +97,21 @@ header nav ul li a:active {
  .indimg {
     margin-top: 24%;
     width: 100%;
-    height: 300px;
+    height: 300%;
 }
 .story {
     margin-top: 8px;
     /*padding-bottom: 2px;
     padding-right: 45%;*/
-    margin-left: 20%;
-    padding: 5px;
+    /*margin-left: 20%;*/
+    padding: 10px;
     text-align: left;
     align-content: center;
     color: black;
     font-size: 0.90em;
-    border: #e64c42;
+    /*border: #e64c42;
     border-width: 1px;
-    border-style: solid;
+    border-style: solid;*/
 
 }
 .story h1 {
@@ -382,7 +382,8 @@ right: 0;
     }
 .indimg {
     width: 100%;
-    margin-top: 15%;
+    /*height: 650px;*/
+    margin-top: 13%;
 }
 .story {
     margin-bottom: 8%;
